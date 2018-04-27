@@ -26,7 +26,7 @@
 
 ### Example:
 
-```html
+
 <ul>
   <li>First item.
     <p>Continuation paragraph.</p>
@@ -54,7 +54,7 @@
     </dl>
   </li>
 </ul>
-```
+
 
 
 

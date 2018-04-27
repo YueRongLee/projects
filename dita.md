@@ -25,7 +25,7 @@
 - ordered list is represented by \<ol\> element.
 - A variable list is represented by the \<dl\> element. Unlike HTML's \<dl\>, the \<dt\> Opens in new window (term being defined) and the \<dd\> Opens in new window (term definition) elements must be wrapped in a \<dlentry\>  element.
 
-### Example:
+#### Example:
 
 ```html
 <ul>
@@ -59,6 +59,8 @@
 ### sections
 \<section\> element has always a \<title\> with it.
 
+#### Example:
+
 ```html
 <section>
   <title>The customary “hello word” program in Tcl/Tk</title>
@@ -67,9 +69,136 @@
        pack .hello</pre>
 </section>
 ```
+## specialized topic types
+The \<topic\> element is the most generic topic type. There are four more specialized topic types: \<concept\> Opens in new window, \<task\> Opens in new window, \<reference\> Opens in new window, \<glossentry\> Opens in new window. When appropriate, use a specialized topic type rather than a plain \<topic\>.
+### \<concept\> element
+- Create a \<concept\> element when you need to provide your reader with background information which must be absorbed in order to understand the rest of the document.
+
+#### Example: 
+```html
+<concept id="what_is_a_cache">
+  <title>What is a cache?</title>
+
+  <shortdesc>Everything you'll ever need to know about
+  <term>cache</term>s.</shortdesc>
+
+  <conbody>
+    <p>In computer science, a cache is a temporary storage area where
+    frequently accessed data can be stored for rapid access.</p>
+  </conbody>
+
+  <related-links>
+    <link format="html" href="http://en.wikipedia.org/wiki/Cache"
+          scope="external">
+      <linktext>Wikipedia definition of a cache</linktext>
+    </link>
+  </related-links>
+</concept>
+```
+### \<task\> element
+
+Create a \<task\> element when you need to explain step by step which procedure is to be followed in order to
+accomplish a given task.
+
+#### Example:
+```html
+<task id="install_emacs">
+ <title>Installing GNU Emacs</title>
+ <taskbody>
+ <prereq>Windows NT 4.0 or any subsequent version of Windows. 5Mb of free
+ disk space.</prereq>
+ <steps>
+ <step>
+ <cmd>Unzip the distribution anywhere.</cmd>
+ <info>We recommend to use the free, open source, <xref format="html"
+ href="http://www.info-zip.org/" scope="external">Info-ZIP</xref>
+ utility to do so.</info>
+ <stepxmp><screen>C:\&gt; unzip emacs-21.3-bin-i386.zip</screen></stepxmp>
+ <stepresult><p>Doing this will create an
+ <filepath>emacs-21.3</filepath> directory.</p></stepresult>
+ </step>
+ <step>
+ <cmd>Go to the bin subdirectory.</cmd>
+  <stepxmp><screen>C:\&gt; cd emacs-21.3\bin</screen></stepxmp>
+ </step>
+ <step>
+ <cmd>Run <cmdname>addpm</cmdname>.</cmd>
+ <stepxmp><screen>C:\emacs-21.3\bin&gt; addpm</screen></stepxmp>
+ <stepresult>A confirmation dialog box is displayed.<fig>
+ <image href="confirm_install_emacs.png"/>
+ </fig></stepresult>
+ </step>
+ <step>
+ <cmd>Click <uicontrol>OK</uicontrol> to confirm.</cmd>
+ </step>
+ </steps>
+ </taskbody>
+</task>
+```
+
+### \<reference\> element
+Create a \<reference\> element when you need to add an entry to a reference manual. The \<reference\>
+element is typically used to document a command or a function.
+
+#### Example:
+```html
+<reference id="pwd_command">
+ <title>The <cmdname>pwd</cmdname> command</title>
+ <refbody>
+ <refsyn><cmdname>pwd</cmdname></refsyn>
+ <section><title>DESCRIPTION</title><p>Print the full filename of the
+ current working directory.</p><note>Your shell may have its own version of
+ <cmdname>pwd</cmdname>, which usually supersedes the version described
+ here.</note></section>
+ <section><title>AUTHOR</title><p>Written by John Doe. </p></section>
+ </refbody>
+ <related-links>
+ <link format="html" href="http://www.manpagez.com/man/3/getcwd/"
+ scope="external">
+ <linktext><cmdname>getcwd</cmdname>(3)</linktext>
+ </link>
+ </related-links>
+</reference>
+```
+
+### \<glossentry\> element
+Create a \<glossentry\> element when you need to add entry to a glossary.
+
+#### Example
+ ``` html
+<glossgroup id="sample_glossary">
+ <title>Sample glossary</title>
+ <glossentry id="ajax">
+ <glossterm>AJAX</glossterm>
+ <glossdef><b>A</b>synchronous <b>Ja</b>vaScript and <b>X</b>ML. Web
+ development techniques used on the client-side to create interactive web
+ applications.</glossdef>
+ </glossentry>
+ <glossentry id="dhtml">
+ <glossterm>DHTML</glossterm>
+ <glossdef><b>D</b>ynamic <b>HTML</b>. Web development techniques used on
+ the client-side to create interactive web sites.</glossdef>
+ </glossentry>
+ <glossentry id="javascript">
+ <glossterm>JavaScript</glossterm>
+ <glossdef>JavaScript is an object-oriented scripting language supported by
+ all major web browsers. It allows the development of interactive web sites
+ and web applications.</glossdef>
+ <related-links>
+ <link format="html" href="https://developer.mozilla.org/en/JavaScript"
+ scope="external">
+ <linktext>Mozilla's Official Documentation on JavaScript</linktext>
+ </link>
+ </related-links>
+ </glossentry>
+</glossgroup>
+```
 
 
 ## ditamaps
-
+- contain:
+  - A \<title\> child element.
+  - A \<topicmeta\> where you can specify the author of the document, the date of publication, etc.
+  - A hierarchy of \<topicref\> elements.
 
 ## problems

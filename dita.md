@@ -18,7 +18,7 @@
   
 ## most used block elements
 
-- paragraph is represented by <p> tag.
+- paragraph is represented by \<\p\> tag.
 - preformatted paragraph is represented by <pre> element
 - itemized list is represented by <ul> and it contains <li> elements.
 - ordered list is represented by <ol> element.
@@ -26,7 +26,7 @@
 
 ### Example:
 
-
+```html
 <ul>
   <li>First item.
     <p>Continuation paragraph.</p>
@@ -54,7 +54,7 @@
     </dl>
   </li>
 </ul>
-
+```
 
 
 

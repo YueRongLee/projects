@@ -12,17 +12,18 @@
 
 - contains:
   - <title> element
-  - An optional <shortdesc> Opens in new window or <abstract> Opens in new window element.
-  - <body> element
-  - optional <related-links> element
+  - An optional \<shortdesc\> or \<abstract\> element.
+  - \<body\> element
+  - optional \<related-links\> element
   
 ## most used block elements
+### paragraph and list
 
 - paragraph is represented by \<p\> tag.
 - preformatted paragraph is represented by \<pre\> element
 - itemized list is represented by \<ul\> and it contains \<li\> elements.
 - ordered list is represented by \<ol\> element.
-- A variable list is represented by the \<dl\> element. Unlike HTML's \<dl\>, the \<dt\> Opens in new window (term being defined) and the \<dd\> Opens in new window (term definition) elements must be wrapped in a <dlentry> Opens in new window element.
+- A variable list is represented by the \<dl\> element. Unlike HTML's \<dl\>, the \<dt\> Opens in new window (term being defined) and the \<dd\> Opens in new window (term definition) elements must be wrapped in a \<dlentry\>  element.
 
 ### Example:
 
@@ -55,8 +56,20 @@
   </li>
 </ul>
 ```
+### sections
+\<section\> element has always a \<title\> with it.
 
+```html
+<section>
+  <title>The customary “hello word” program in Tcl/Tk</title>
+
+  <pre frame="all">button .hello -text "Hello, World!" -command { exit }
+       pack .hello</pre>
+</section>
+```
 
 
 ## ditamaps
+
+
 ## problems

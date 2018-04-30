@@ -15,43 +15,11 @@
   - An optional \<shortdesc\> or \<abstract\> element (描述).
   - \<body\> element 
   - optional \<related-links\> element (資料來源）
-  
-  #### Example
-  ```html
-<topic id="docbook_or_dita">
-  <title>DITA or DocBook?</title>
-
-  <shortdesc>Both DITA and DocBook are both mature, feature rich, document types,
-  so which one to choose?</shortdesc>
-
-  <body>
-    <p>DocBook 5 is a mature document type. It is well-documented (DocBook:
-    The Definitive Guide, DocBook XSL: The Complete Guide), featuring decent
-    XSL stylesheets allowing conversion to a variety of formats, based on the
-    best schema technologies: RELAX NG and Schematron.</p>
-
-    <p>DITA concepts (topics, maps, specialization, etc) have an immediate
-    appeal to the technical writer, making this document type more attractive
-    than DocBook. However the DocBook vocabulary is comprehensive and very
-    well thought out. So choose DITA if its technical vocabulary is
-    sufficiently expressive for your needs or if, anyway, you intend to
-    specialize DITA.</p>
-  </body>
-
-  <related-links>
-    <link format="html" href="http://www.docbook.org/" scope="external">
-      <linktext>DocBook 5</linktext>
-    </link>
-
-    <link format="html"
-          href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
-          scope="external">
-      <linktext>DITA</linktext>
-    </link>
-  </related-links>
-</topic>
-```
   
+  #### Example:
+
+
+
 ## most used block elements
 ### paragraph and list
 
@@ -177,6 +145,7 @@ Create a \<reference\> element when you need to add an entry to a reference manu
 element is typically used to document a command or a function.
 
 #### Example:
+
 ```html
 <reference id="pwd_command">
  <title>The <cmdname>pwd</cmdname> command</title>
@@ -200,7 +169,8 @@ element is typically used to document a command or a function.
 ### \<glossentry\> element
 Create a \<glossentry\> element when you need to add entry to a glossary.
 
-#### Example
+#### Example:
+
  ``` html
 <glossgroup id="sample_glossary">
  <title>Sample glossary</title>
@@ -267,10 +237,6 @@ Create a \<glossentry\> element when you need to add entry to a glossary.
   </tgroup>
 </table>
 ```
-
-  
-
-
 ## ditamaps
 ### \<map\> element:
 - contain:
@@ -312,7 +278,9 @@ Specifying attribute toc="no" for a <topicref> element prevents it from appearin
   * However the most common use of <frontmatter> and <backmatter> is to contain the following, empty placeholder elements: <toc> Opens in new window, <figurelist> Opens in new window, <tablelist> Opens in new window, <indexlist> Opens in new window. These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.
 
 #### Example
+
 ```html
+
 <bookmap>
   <booktitle>
     <mainbooktitle>DITA for the Impatient</mainbooktitle>

@@ -7,6 +7,8 @@
 - The recommended filename extension for a map file is ".ditamap". （ditamap 的格式 = 「.ditamap」
 - Topic and map files may be contained in different directories. You are free to organize the contents of these directories as you wish. (topic 跟 map 可儲存在不同的路徑，您可以自由在map組織裡面的內容（topic））
 
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot.png)
+
 
 ## dita topic
 
@@ -93,7 +95,7 @@
 </ul>
 ```
 ### sections
-\<section\> element has always a \<title\> with it.
+\<section\> element has always a \<title\> with it. (區塊）
 
 #### Example:
 
@@ -108,7 +110,7 @@
 ## specialized topic types
 The \<topic\> element is the most generic topic type. There are four more specialized topic types: \<concept\> Opens in new window, \<task\> Opens in new window, \<reference\> Opens in new window, \<glossentry\> Opens in new window. When appropriate, use a specialized topic type rather than a plain \<topic\>.
 ### \<concept\> element
-- Create a \<concept\> element when you need to provide your reader with background information which must be absorbed in order to understand the rest of the document.
+- Create a \<concept\> element when you need to provide your reader with background information which must be absorbed in order to understand the rest of the document.（要寫重點的時候）
 
 #### Example: 
 ```html
@@ -134,7 +136,7 @@ The \<topic\> element is the most generic topic type. There are four more specia
 ### \<task\> element
 
 Create a \<task\> element when you need to explain step by step which procedure is to be followed in order to
-accomplish a given task.
+accomplish a given task. （要寫一步步的流程）
 
 #### Example:
 ```html
@@ -174,7 +176,7 @@ accomplish a given task.
 
 ### \<reference\> element
 Create a \<reference\> element when you need to add an entry to a reference manual. The \<reference\>
-element is typically used to document a command or a function.
+element is typically used to document a command or a function. （您需要在參考手冊中添加一個條目）
 
 #### Example:
 
@@ -199,7 +201,7 @@ element is typically used to document a command or a function.
 ```
 
 ### \<glossentry\> element
-Create a \<glossentry\> element when you need to add entry to a glossary.
+Create a \<glossentry\> element when you need to add entry to a glossary.（當你需要添加條目到詞彙表）
 
 #### Example:
 
@@ -273,9 +275,9 @@ Create a \<glossentry\> element when you need to add entry to a glossary.
 ### \<map\> element:
 - contain:
   - A \<title\> child element.
-  - A \<topicmeta\> where you can specify the author of the document, the date of publication, etc.
-  - A hierarchy of \<topicref\> elements.
-  
+  - A \<topicmeta\> where you can specify the author of the document, the date of publication, etc. （您可以指定文檔的作者，發布日期，等等）
+  - A hierarchy of \<topicref\> elements.（\<topicref\> elements階層）
+   
 ####  Example
  ```html
   <topicref href="topic.dita">
@@ -289,7 +291,7 @@ Create a \<glossentry\> element when you need to add entry to a glossary.
 ```
 #### the toc attribute
 
-Specifying attribute toc="no" for a <topicref> element prevents it from appearing in the generated Table of Contents.
+Specifying attribute toc="no" for a <topicref> element prevents it from appearing in the generated Table of Contents. 
   
 #### Example 
   

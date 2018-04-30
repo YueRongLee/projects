@@ -194,6 +194,46 @@ Create a \<glossentry\> element when you need to add entry to a glossary.
 </glossgroup>
 ```
 
+### Tables
+- two kinds: \<simpletable\> for DITA and \<table\>(Docbook table).
+- contains: optional \<sthead\> and \<strow\> elements. Both row elements, \<sthead\> and \<strow\>, contain \<stentry\> cell elements.
+#### Example
+```html
+<table>
+  <title>Sample CALS table</title>
+
+  <tgroup cols="3">
+    <colspec colwidth="1*"/>
+    <colspec colwidth="2*"/>
+    <colspec colwidth="3*"/>
+
+    <thead>
+      <row>
+        <entry align="center">A</entry>
+        <entry align="center">B</entry>
+        <entry align="center">C</entry>
+      </row>
+    </thead>
+
+    <tbody>
+      <row>
+        <entry>A,1</entry>
+        <entry>B,1</entry>
+        <entry>C,1</entry>
+      </row>
+
+      <row>
+        <entry>A,2</entry>
+        <entry>B,2</entry>
+        <entry>C,2</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+```
+
+  
+
 
 ## ditamaps
 - contain:

@@ -12,9 +12,45 @@
 
 - contains:
   - <title> element
-  - An optional \<shortdesc\> or \<abstract\> element.
-  - \<body\> element
-  - optional \<related-links\> element
+  - An optional \<shortdesc\> or \<abstract\> element (描述).
+  - \<body\> element 
+  - optional \<related-links\> element (資料來源）
+  
+  #### Example
+  ```html
+<topic id="docbook_or_dita">
+  <title>DITA or DocBook?</title>
+
+  <shortdesc>Both DITA and DocBook are both mature, feature rich, document types,
+  so which one to choose?</shortdesc>
+
+  <body>
+    <p>DocBook 5 is a mature document type. It is well-documented (DocBook:
+    The Definitive Guide, DocBook XSL: The Complete Guide), featuring decent
+    XSL stylesheets allowing conversion to a variety of formats, based on the
+    best schema technologies: RELAX NG and Schematron.</p>
+
+    <p>DITA concepts (topics, maps, specialization, etc) have an immediate
+    appeal to the technical writer, making this document type more attractive
+    than DocBook. However the DocBook vocabulary is comprehensive and very
+    well thought out. So choose DITA if its technical vocabulary is
+    sufficiently expressive for your needs or if, anyway, you intend to
+    specialize DITA.</p>
+  </body>
+
+  <related-links>
+    <link format="html" href="http://www.docbook.org/" scope="external">
+      <linktext>DocBook 5</linktext>
+    </link>
+
+    <link format="html"
+          href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
+          scope="external">
+      <linktext>DITA</linktext>
+    </link>
+  </related-links>
+</topic>
+```
   
 ## most used block elements
 ### paragraph and list
@@ -322,4 +358,3 @@ Specifying attribute toc="no" for a <topicref> element prevents it from appearin
 ```
   
 
-## problems

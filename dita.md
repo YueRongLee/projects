@@ -236,9 +236,90 @@ Create a \<glossentry\> element when you need to add entry to a glossary.
 
 
 ## ditamaps
+### \<map\> element:
 - contain:
   - A \<title\> child element.
   - A \<topicmeta\> where you can specify the author of the document, the date of publication, etc.
   - A hierarchy of \<topicref\> elements.
+  
+####  Example
+ ```html
+  <topicref href="topic.dita">
+  <topicref href="topic_structure.dita">
+    <topicref href="samples/sample_topic.dita"/>
+  </topicref>
+  <topicref href="block_elements.dita"/>
+  <topicref href="inline_elements.dita"/>
+  <topicref href="link_elements.dita"/>
+</topicref>
+```
+#### the toc attribute
+
+Specifying attribute toc="no" for a <topicref> element prevents it from appearing in the generated Table of Contents.
+  
+#### Example 
+  
+  ```html
+  <topicref href="topic_structure.dita">
+      <topicref href="samples/sample_topic.dita" toc="no"/>
+    </topicref>
+  ```
+### the \<bookmap\> element
+
+- A \<bookmap\> Opens in new window element is just a more elaborate form of \<map\> . We recommend using a \<bookmap\> for anything more complex than an article(編輯比文章更複雜在用）.
+- contains: 
+  * \<booktitle\>
+  * \<bookmeta\> contains richer information than \<topicmeta\>
+  * specialization of \<topicref\>: \<part\>, <\chapter\> and \<appendix\>
+  * The hierarchy of references to topic elements which makes up the body of the document may be preceded by a <frontmatter> Opens in new window element and followed by a <backmatter> element.
+  * These wrapper elements can contain references to actual, hand-written, topics: bookabstract, <preface>, <dedication>, <colophon>, etc.
+  * However the most common use of <frontmatter> and <backmatter> is to contain the following, empty placeholder elements: <toc> Opens in new window, <figurelist> Opens in new window, <tablelist> Opens in new window, <indexlist> Opens in new window. These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.
+
+#### Example
+```html
+<bookmap>
+  <booktitle>
+    <mainbooktitle>DITA for the Impatient</mainbooktitle>
+  </booktitle>
+
+  <bookmeta>
+    <authorinformation>
+      <personinfo>...</personinfo>
+      <organizationinfo>...</organizationinfo>
+    </authorinformation>
+    <critdates>
+      <created date="October 7, 2009"/>
+    </critdates>
+  </bookmeta>
+
+  <frontmatter>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <tablelist/>
+    </booklists>
+  </frontmatter>
+
+  <chapter href="introduction.dita"/>
+  <chapter href="topics_and_maps.dita"/>
+  <chapter href="topic.dita">
+    <topicref href="topic_structure.dita">
+      <topicref href="samples/sample_topic.dita" toc="no"/>
+    </topicref>
+    <topicref href="block_elements.dita"/>
+    <topicref href="inline_elements.dita"/>
+    <topicref href="link_elements.dita"/>
+  </chapter>
+  .
+  .
+  .
+  <chapter navtitle="Topic maps">
+    <topicref href="map.dita"/>
+    <topicref href="bookmap.dita"/>
+  </chapter>
+  <chapter href="conclusion.dita"/>
+</bookmap>
+```
+  
 
 ## problems

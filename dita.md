@@ -304,12 +304,12 @@ Specifying attribute toc="no" for a <topicref> element prevents it from appearin
 
 - A \<bookmap\> Opens in new window element is just a more elaborate form of \<map\> . We recommend using a \<bookmap\> for anything more complex than an article(編輯比文章更複雜在用）.
 - contains: 
-  * \<booktitle\>
-  * \<bookmeta\> contains richer information than \<topicmeta\> （跟topicmeta一樣，但有更多資訊）
-  * specialization of \<topicref\>: \<part\>, \<chapter\> and \<appendix\>
+  * A \<booktitle\> element.
+  * A \<bookmeta\> element that contains richer information than \<topicmeta\> （跟topicmeta一樣，但有更多資訊）
+  * Specialization of \<topicref\>: \<part\>, \<chapter\> and \<appendix\>
 - The hierarchy of references to topic elements which makes up the body of the document may be preceded by a \<frontmatter\> element and followed by a \<backmatter\> element.
 - These wrapper elements can contain references to actual, hand-written, topics: bookabstract, \<preface\>, \<dedication\>, \<colophon\>, etc.
-- However the most common use of \<frontmatter\> and \<backmatter\> is to contain the following, empty placeholder elements: 、\<toc\>, \<figurelist\> , \<tablelist\>, \<indexlist\> . These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.
+- However the most common use of \<frontmatter\> and \<backmatter\> is to contain the following, empty placeholder elements: \<toc\>, \<figurelist\> , \<tablelist\>, \<indexlist\> . These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.
 
 #### Example
 

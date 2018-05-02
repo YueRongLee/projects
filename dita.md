@@ -61,7 +61,7 @@
 - preformatted paragraph is represented by \<pre\> element(預先格式化的一段）.
 - itemized list is represented by \<ul\> and it contains \<li\> elements.(無序list)
 - ordered list is represented by \<ol\> element.(有序list)
-- A variable list is represented by the \<dl\> element. Unlike HTML's \<dl\>, the \<dt\>(term being defined) and the \<dd\> Opens in new window (term definition) elements must be wrapped in a \<dlentry\>  element.(變量list)
+- A variable list is represented by the \<dl\> element. Unlike HTML's \<dl\>, the \<dt\>(term being defined) and the \<dd\> (term definition) elements must be wrapped in a \<dlentry\>  element.(變量list)
 
 #### Example:
 

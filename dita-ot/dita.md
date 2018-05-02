@@ -7,7 +7,7 @@
 - The recommended filename extension for a map file is ".ditamap". （ditamap 的格式 = 「.ditamap」
 - Topic and map files may be contained in different directories. You are free to organize the contents of these directories as you wish. (topic 跟 map 可儲存在不同的路徑，您可以自由在map組織裡面的內容（topic））
 
-![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot.png)
+![dita architecture](https://github.com/weily10/projects/tree/master/dita-ot/images)
 
 
 ## dita topic

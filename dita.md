@@ -1,4 +1,4 @@
-# Dita-OT
+# Dita-OT Manual
 
 ## introduction 
 

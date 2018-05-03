@@ -9,7 +9,17 @@
 
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/Screen%20Shot%202018-05-02%20at%2018.11.01.png)
 
-## DITA 編輯環境
+## DITA 開發環境（需知工具）
+1. tag tool
+# ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/tag%20tool.jpg)
+#### 顯示差別：
+ - full tags with attributes：
+ ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/withtag.png)
+ - no tags：
+ ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/notags.png)
+ 
+2. Apply transformation scenario and configure transformation scenario
+
 
 
 

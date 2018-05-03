@@ -32,9 +32,6 @@
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/text.png)
 
 
-
-
-
 ## how to create a project using oxygen XML (如何用oxgyen XML 新建個dita專案）
 
 1. 在桌面的任何地方建個文件夾

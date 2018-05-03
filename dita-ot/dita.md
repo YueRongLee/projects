@@ -1,7 +1,7 @@
 # Dita-OT Manual
 
 ## introduction 
-- To summarize: Dita is a file DITA是用於構建，開發，管理和發佈內容的基於XML的開放標準
+- To summarize: DITA是基於XML的資料架構，用於build，開發，管理和發佈。
 - It is recommended to have a single topic per XML file .(建議每個XML文件都有一個topic)
 - It is recommended filename extension for a topic file is ".dita".（topic 的格式=「.dita」)
 - The recommended filename extension for a map file is ".ditamap". （ditamap 的格式 = 「.ditamap」

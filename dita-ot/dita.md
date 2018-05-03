@@ -1,13 +1,23 @@
 # Dita-OT Manual
 
 ## introduction 
-- To summarize: DITA是基於XML的資料架構，用於build，開發，管理和發佈。
+- To summarize: **DITA是基於XML的資料架構，用於build，開發，管理和發佈。**
 - It is recommended to have a single topic per XML file .(建議每個XML文件都有一個topic)
 - It is recommended filename extension for a topic file is ".dita".（topic 的格式=「.dita」)
 - The recommended filename extension for a map file is ".ditamap". （ditamap 的格式 = 「.ditamap」
 - Topic and map files may be contained in different directories. You are free to organize the contents of these directories as you wish. (topic 跟 map 可儲存在不同的路徑，您可以自由在map組織裡面的內容（topic））
 
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/Screen%20Shot%202018-05-02%20at%2018.11.01.png)
+
+## how to create a project using oxygen XML (如何用oxgyen XML 新建個dita專案）
+
+1. 在桌面的任何地方建個文件夾
+2. 在資料夾裡面建個 XPR 檔（new project)，然後點兩下。
+會顯示這樣的畫面：
+
+3. 在oxygen：File -> New -> Framework Templates -> DITA -> Topic (選擇你要的DITA檔）
+4. 在oxygen：File -> New -> Framework Templates -> DITAMAP -> Map (選擇你要的DITAMAP檔）
+
 
 
 ## dita topic

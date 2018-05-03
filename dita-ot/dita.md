@@ -9,6 +9,10 @@
 
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/Screen%20Shot%202018-05-02%20at%2018.11.01.png)
 
+## DITA 編輯環境
+
+
+
 ## how to create a project using oxygen XML (如何用oxgyen XML 新建個dita專案）
 
 1. 在桌面的任何地方建個文件夾
@@ -323,14 +327,12 @@ Specifying attribute toc="no" for a <topicref> element prevents it from appearin
   ```
 ### the \<bookmap\> element
 
-- A \<bookmap\> Opens in new window element is just a more elaborate form of \<map\> . We recommend using a \<bookmap\> for anything more complex than an article(編輯比文章更複雜在用）.
+- A \<bookmap\> Opens in new window element is just a more elaborate form of \<map\> . We recommend using a \<bookmap\> for anything more complex than an article(編輯比文章更複雜的文件）.
 - contains: 
   * A \<booktitle\> element
-  * A \<bookmeta\> element that contains richer information than \<topicmeta\>. （跟topicmeta一樣，但有更多資訊）
-  * Specialization of \<topicref\>: \<part\> （部分）, \<chapter\>（章節） and \<appendix\> （附錄）. (分成比較詳細的tag）
-- The hierarchy of references to topic elements which makes up the body of the document may be preceded by a \<frontmatter\> element and followed by a \<backmatter\> element.
-- These wrapper elements can contain references to actual, hand-written, topics: bookabstract, \<preface\>, \<dedication\>, \<colophon\>, etc.
-- However the most common use of \<frontmatter\> and \<backmatter\> is to contain the following, empty placeholder elements: \<toc\>, \<figurelist\> , \<tablelist\>, \<indexlist\> . These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.（指定文件裡面的元素，可以用frontmatter，像是表格，圖片等等）
+  * A \<bookmeta\> element that contains richer information than \<topicmeta\>. （可比topicmeta寫更多的資訊）
+  * Specialization of \<topicref\>: \<part\> （部分）, \<chapter\>（章節） and \<appendix\> （附錄）. (/<topicref/> 分成比較詳細的tag）
+- The most common use of \<frontmatter\> and \<backmatter\> is to contain the following, empty placeholder elements: \<toc\>, \<figurelist\> , \<tablelist\>, \<indexlist\> . These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.（指定文件裡面的元素，可以用frontmatter，像是表格，圖片等等）
 
 #### Example
 

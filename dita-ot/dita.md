@@ -244,6 +244,8 @@ element is typically used to document a command or a function. （您需要在�
  </related-links>
 </reference>
 ```
+#### 產生出來的PDF：
+![reference](https://github.com/weily10/projects/blob/master/dita-ot/images/reference.png)
 
 ### \<glossentry\> element
 Create a \<glossentry\> element when you need to add entry to a glossary.（當你需要添加條目到詞彙表）

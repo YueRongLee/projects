@@ -88,6 +88,9 @@
 </topic>
 ```
 
+#### 產生出來的PDF：
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/topicresult.png)
+
 ## most used block elements
 ### paragraph and list
 
@@ -128,6 +131,9 @@
   </li>
 </ul>
 ```
+#### 產生出來的PDF：
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/list.png)
+
 ### sections
 \<section\> element has always a \<title\> with it. (區塊）
 
@@ -167,6 +173,9 @@ The \<topic\> element is the most generic topic type. There are four more specia
   </related-links>
 </concept>
 ```
+#### 產生出來的PDF：
+![dita concept](https://github.com/weily10/projects/blob/master/dita-ot/images/concept.png)
+
 ### \<task\> element
 
 Create a \<task\> element when you need to explain step by step which procedure is to be followed in order to
@@ -207,6 +216,8 @@ accomplish a given task. （要寫一步步的流程）
  </taskbody>
 </task>
 ```
+#### 產生出來的PDF：
+![task result](https://github.com/weily10/projects/blob/master/dita-ot/images/task.png)
 
 ### \<reference\> element
 Create a \<reference\> element when you need to add an entry to a reference manual. The \<reference\>
@@ -349,9 +360,9 @@ Specifying attribute toc="no" for a <topicref> element prevents it from appearin
 
 - A \<bookmap\> Opens in new window element is just a more elaborate form of \<map\> . We recommend using a \<bookmap\> for anything more complex than an article(編輯比文章更複雜的文件）.
 - contains:
-  * A \<booktitle\> element （名稱）
-  * A \<bookmeta\> element that contains richer information than \<topicmeta\>. （可比topicmeta寫更多的資訊）
-  * Specialization of \<topicref\>: \<part\> （部分）, \<chapter\>（章節） and \<appendix\> （附錄）. (/<topicref/> 分成比較詳細的tag）
+  - A \<booktitle\> element（名稱）
+  - A \<bookmeta\> element that contains richer information than \<topicmeta\>. （可比topicmeta寫更多的資訊）
+  - Specialization of \<topicref\>: \<part\> （部分）, \<chapter\>（章節） and \<appendix\> （附錄）. (\<topicref\> 分成比較詳細的tag）
 - The most common use of \<frontmatter\> and \<backmatter\> is to contain the following, empty placeholder elements: \<toc\>, \<figurelist\> , \<tablelist\>, \<indexlist\> . These placeholders instructs the DITA processing software to automatically generate: a Table of Contents, a List of Figures, a List of Tables, an Index.（指定文件裡面的元素，可以用frontmatter，像是表格，圖片等等）
 
 #### Example

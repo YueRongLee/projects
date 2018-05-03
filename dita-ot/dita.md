@@ -13,7 +13,7 @@
 
 1. 在桌面的任何地方建個文件夾
 2. 在資料夾裡面建個 XPR 檔（new project)，然後點兩下。
-會顯示這樣的畫面：
+結構會像這樣：
 
 3. 在oxygen：File -> New -> Framework Templates -> DITA -> Topic (選擇你要的DITA檔）
 4. 在oxygen：File -> New -> Framework Templates -> DITAMAP -> Map (選擇你要的DITAMAP檔）

@@ -283,6 +283,16 @@ Create a \<glossentry\> element when you need to add entry to a glossary.（當�
 </table>
 ```
 ## ditamaps
+
+### 如何操作DITAMAP
+ditamap的介面：
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/ditamapManagement1.jpg)
+
+- 新建個ditamap的時候他會被DITA maps manager 管理
+- 在DITA maps manager 裡面點兩下可執行ditamap的介面
+- 可把你要的dita file拉進ditamap 管理
+
+
 ### \<map\> element:
 - contain:
   - A \<title\> child element.

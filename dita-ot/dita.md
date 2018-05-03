@@ -6,8 +6,8 @@
 - It is recommended filename extension for a topic file is ".dita".（topic 的格式=「.dita」)
 - The recommended filename extension for a map file is ".ditamap". （ditamap 的格式 = 「.ditamap」
 - Topic and map files may be contained in different directories. You are free to organize the contents of these directories as you wish. (topic 跟 map 可儲存在不同的路徑，您可以自由在map組織裡面的內容（topic））
-
-![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/Screen%20Shot%202018-05-02%20at%2018.11.01.png)
+- Dita basic structure:
+# ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/Screen%20Shot%202018-05-02%20at%2018.11.01.png)
 
 ## DITA 開發環境（需知工具）
 1. tag tool
@@ -18,7 +18,19 @@
  - no tags：
  ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/notags.png)
  
-2. Apply transformation scenario and configure transformation scenario
+2. Apply transformation scenario and configure transformation scenario tools
+- 按左按鈕執行你的專案:
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/run.png)
+- 按右邊按鈕設定你專案的輸出格式（xhtml，pdf 等等):
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/config.png)
+
+3.編輯模式
+- Author mode:
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/author.png)
+
+- Text mode:
+![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/text.png)
+
 
 
 
@@ -305,6 +317,7 @@ ditamap的介面：
 - 新建個ditamap的時候他會被DITA maps manager 管理
 - 在DITA maps manager 裡面點兩下可執行ditamap的介面
 - 可把你要的dita file拉進ditamap 管理
+- **要執行專案記得在ditamap介面跑** 
 
 
 ### \<map\> element:

@@ -284,8 +284,9 @@ Create a \<glossentry\> element when you need to add entry to a glossary.（當�
 ![glossary](https://github.com/weily10/projects/blob/master/dita-ot/images/glossary.png)
 
 ### Tables
-- two kinds: \<simpletable\> for DITA and \<table\>(Docbook table).
-- contains: optional \<sthead\> and \<strow\> elements. Both row elements, \<sthead\> and \<strow\>, contain \<stentry\> cell elements.
+- two kinds: \<simpletable\> for DITA and \<table\>(Docbook table). (有兩種table：\<simpletable\> 跟 CALS table)
+- contains: optional \<sthead\> and \<strow\> elements. Both row elements, \<sthead\> and \<strow\>, contain \<stentry\> cell elements. (有個自選的\<sthead> 跟 \<strow\> 的元素，\<sthead> 跟 \<strow\>裡面也可以包\<stentry\>元素）
+
 #### Example
 ```html
 <table>

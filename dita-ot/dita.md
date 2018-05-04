@@ -132,7 +132,7 @@
 </ul>
 ```
 #### 產生出來的PDF：
-![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/list.png)
+![list](https://github.com/weily10/projects/blob/master/dita-ot/images/list.png)
 
 ### sections
 \<section\> element has always a \<title\> with it. (區塊）
@@ -280,6 +280,8 @@ Create a \<glossentry\> element when you need to add entry to a glossary.（當�
  </glossentry>
 </glossgroup>
 ```
+#### 產生出來的PDF：
+![glossary](https://github.com/weily10/projects/blob/master/dita-ot/images/glossary.png)
 
 ### Tables
 - two kinds: \<simpletable\> for DITA and \<table\>(Docbook table).
@@ -318,6 +320,9 @@ Create a \<glossentry\> element when you need to add entry to a glossary.（當�
   </tgroup>
 </table>
 ```
+#### 產生出來的PDF：
+![table](https://github.com/weily10/projects/blob/master/dita-ot/images/table.png)
+
 ## ditamaps
 
 ### 如何操作DITAMAP

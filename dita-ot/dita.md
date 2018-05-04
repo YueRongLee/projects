@@ -25,6 +25,7 @@
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/config.png)
 
 3.編輯模式
+- DITA有提供兩種編輯模式：
 - Author mode:
 ![dita architecture](https://github.com/weily10/projects/blob/master/dita-ot/images/author.png)
 

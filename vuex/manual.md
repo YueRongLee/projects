@@ -74,4 +74,8 @@ export default {
 }
 </script>
 ```
-首先我們得import mapState ，就是可以讓我們從VUEX存取state，這樣才抓得到我們建的title。接下來加上computed 加
+- 首先我們得import 可以讓我們從VUEX存取state的幫手叫 mapState ，這樣才抓得到我們建的title。接下來加上computed 及呼叫*mapState* 及pass一個陣列，陣列裡加上state property 的名稱。
+- 這個動作會帶給我們title裡的直及
+
+
+ ```html

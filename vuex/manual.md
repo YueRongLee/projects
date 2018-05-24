@@ -43,4 +43,22 @@ cd your-project-name && npm run serve
 ```
 
 # The Vue Devtools Chrome Plugin
-雖然不要求要安裝 這個plugin能幫你debug你的 vue app ， 能看到你目前state的情況。
+雖然不要求安裝，這個plugin能幫忙debug你的 vue app ， 能看到目前state的情況 是開發的好幫手。
+
+# 指定個State Property
+進入/src/store.js，基本上這就是VUEX，是我們用來指定data、mutation、action、getter 及其他的花哨的東西。我們先來看state的部分，state 就是儲存data的地方。接下來我們在state裡面set一個property，這個property能當作我們app的title。
+
+```
+state: {
+    title: 'My Custom Title'
+  },
+```
+ 別忘了save，接下來進入/src/components/HelloWorld.vue，調整你的template。
+ ```html
+ <template>
+  <div>
+    <h1>{{title}}</h1>
+  </div>
+</template>
+```
+

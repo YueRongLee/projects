@@ -61,4 +61,17 @@ state: {
   </div>
 </template>
 ```
+接著在script的區段調整：
+```html
+<script>
+import { mapState } from 'vuex'
 
+export default {
+  name: 'HelloWorld',
+  computed: mapState([
+    'title'
+  ]) 
+}
+</script>
+```
+首先我們得import mapState ，就是可以讓我們從VUEX存取state，這樣才抓得到我們建的title。接下來加上computed 加

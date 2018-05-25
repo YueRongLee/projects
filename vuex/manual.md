@@ -151,6 +151,6 @@ export default {
 }
 </script>
 ```
-# ![tool demonstrating state 2]https://github.com/weily10/projects/blob/master/vuex/images/Screen%20Shot%202018-05-25%20at%2015.28.32.png
+# ![tool demonstrating state 2](https://github.com/weily10/projects/blob/master/vuex/images/Screen%20Shot%202018-05-25%20at%2015.28.32.png)
 
 done

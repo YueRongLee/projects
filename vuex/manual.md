@@ -98,5 +98,32 @@ export default {
 }
 </script>
 ```
-- 我們指定了不同的名稱 *custom*
-- 
+- 指定不同的名稱叫 *custom*
+- 未來會有很多state property不只有mapState()，在這個情況下必須用 *object spread operator* ，基本上在mapState前面加三點就是了
+
+```html
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  name: 'HelloWorld',
+  computed: {
+      ...mapState([
+      'custom'
+    ]),
+  }
+}
+</script>
+```
+回到*src/store.js* 在define個array當作state property
+
+```html
+ state: {
+    custom: 'title',
+    animals: [
+      'dog',
+      'cat',
+      'bird'
+    ]
+  },
+```

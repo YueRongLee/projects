@@ -133,7 +133,7 @@ export default {
        <li v-for="animal in animals" v-bind:key="animal">
          {{ animal }}
        </li>
-    </ul>
+  </ul>
 ```
 還有script區段：
 ```html

@@ -78,4 +78,25 @@ export default {
 - 這個動作會帶給我們title裡的直，也可以在template區塊用interpolation指定*title*
 # ![tool demonstrating state](https://github.com/weily10/projects/blob/master/vuex/images/Screen%20Shot%202018-05-25%20at%2011.16.27.png)
 
+- Vue devtool 會讓你看目前你定義的state。
+- 你也可以定義個物件：
  ```html
+<template>
+  <div>
+    <h1>{{custom}}</h1> 改了這邊
+  </div>
+</template>
+
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  name: 'HelloWorld',
+  computed: mapState({
+    custom: 'hehe' //改了這邊
+  })
+}
+</script>
+```
+- 我們指定了不同的名稱 *custom*
+- 

@@ -127,3 +127,27 @@ export default {
     ]
   },
 ```
+在template指定list：
+```html
+  <ul>
+       <li v-for="animal in animals" v-bind:key="animal">
+         {{ animal }}
+       </li>
+    </ul>
+```
+還有script區段：
+```html
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  name: 'HelloWorld',
+  computed: {
+      ...mapState([
+      'custom',
+      'animals'
+    ]),
+  }
+}
+</script>
+```

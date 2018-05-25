@@ -154,4 +154,14 @@ export default {
 done!
 # ![tool demonstrating state 2](https://github.com/weily10/projects/blob/master/vuex/images/Screen%20Shot%202018-05-25%20at%2015.28.32.png)
 
+# Vuex Getters
+到這裡我們只用到mapState helper 來直接存取state裡面的data，如果沒在data做計算這是OK的，但如果遇到很多component的時候，在data變化的時候你會做很多不必要的複製code的動作。Getters 就是來處理這個問題，假如我們想要數array裡面有幾個物件。
+-請到/src/store.js 假如以下的code:
 
+```html
+ getters: {
+    countAnimals: state => {
+      return state.animals.length
+    }
+  },
+```

@@ -155,7 +155,7 @@ done!
 # ![tool demonstrating state 2](https://github.com/weily10/projects/blob/master/vuex/images/Screen%20Shot%202018-05-25%20at%2015.28.32.png)
 
 # Vuex Getters
-到這裡我們只用到mapState helper 來直接存取state裡面的data，如果沒在data做計算這是OK的，但如果遇到很多component的時候，在data變化的時候你會做很多不必要的複製code的動作。Getters 就是來處理這個問題，假如我們想要數array裡面有幾個物件。
+到這裡我們只用到mapState helper 來直接存取state裡面的data，如果沒在data做計算這是OK的，但如果遇到很多component的時候，在data變化的時候你會做很多不必要的複製code的動作。Getters 就是來處理這個問題，假如我們想要數array裡面有幾個元素。
 - 請到/src/store.js 假如以下的code:
 
 ```html
@@ -165,4 +165,28 @@ done!
     }
   },
 ```
+以上我們建了一個getter叫countAnimals然後經過state存取及回傳一個存在state 裡的animals array 的length （算array 裡有幾個元素）。回到/src/components/HelloWorld.vue file，我們可簡單的存取我們剛建的getter，但我們可以在建另外個component來示範vuex原本的的目標也就是可以讓很多component去存取同一個state 管理。
+- 先在HelloWorld.vue做些更改：
+- template：
+```html
+ <div>
+    <stats/>
+ </div>
+```
+- script：
+<script>
+import { mapState } from 'vuex'
 
+export default {
+  name: 'HelloWorld',
+  computed: {
+      ...mapState([
+      'custom',
+      'animals'
+    ]),
+  },
+  components:{
+      Stats
+  }
+}
+</script>

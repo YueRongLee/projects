@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="bean" namespace="/" extends="struts-default">
+		<action name="hellocustomers"
+			class="com.khh.controller.BeanFactoryController" method="getCustomers">
+		<result name="ok">/showbean.jsp</result></action></package>
+	<package name="gjuncustomers" namespace="/gjun"
+		extends="struts-default">
+	<action name="custqry"
+		class="com.khh.controller.GjunCustomersController" >
+	<result name="success">
+		/WEB-INF/customers/gjuncustomersqry.jsp
+	</result></action>
+	<action name="custqrybyname"
+		class="com.khh.controller.GjunCustomersController" method="custQryByName">
+	<result name="success">
+		/WEB-INF/customers/gjuncustomersshow.jsp
+	</result>
+	<result name="failure">/WEB-INF/customers/notfound.jsp</result></action></package></struts>

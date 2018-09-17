@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 自訂一個package 命名空間-這是首頁各種action -->
+	<package name="myhome" extends="struts-default" namespace="/">
+			<!-- 設定一個代表首頁入口action name 應對一個控制器類別的method -->
+			<action name="default"  class="com.khh.controller.HomeController" method="home">
+				<!-- 撰寫method回應的旗標字串 -->
+				<result name="success">/WEB-INF/index.jsp</result>
+			</action>
+	</package>
+	<package name="register" extends="struts-default">
+		<!-- method attribute不指定 預設會執行success method -->
+		<action name="register"
+			class="com.khh.controller.RegisterController" method="regirsterForm">
+		<result name="register">
+			/WEB-INF/register/registerform.jsp
+		</result></action>
+		<action name="save"
+			class="com.khh.controller.RegisterController" method="registerSave">
+		<result name="success">/WEB-INF/register/saveok.jsp</result></action></package>
+	<package name="customers" namespace="/customers"
+		extends="struts-default">
+	<action name="customersqry"
+		class="com.khh.controller.CustomersController">
+	<result name="success">/WEB-INF/customers/customersform.jsp</result></action>
+	<action name="custqry"
+		class="com.khh.controller.CustomersController" method="customerqryById">
+	<result name="ok">/showcustomers.jsp</result>
+	<result name="no">/nofound.jsp</result></action></package>
+	<include file="bean.xml"></include></struts>    

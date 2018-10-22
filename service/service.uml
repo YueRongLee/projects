@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_LWGRwNXrEei5BerjL2AyGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_LeA3oNXrEei5BerjL2AyGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LZx34NXrEei5BerjL2AyGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LZ-FINXrEei5BerjL2AyGg" name="khh">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LZ-FIdXrEei5BerjL2AyGg" name="service">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LaHPENXrEei5BerjL2AyGg" name="CustomersService">
+          <ownedOperation xmi:id="_LeFJENXrEei5BerjL2AyGg" name="getCustomers" visibility="public">
+            <ownedParameter xmi:id="_LeFJEdXrEei5BerjL2AyGg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LaMHkNXrEei5BerjL2AyGg" name="HelloService">
+          <ownedOperation xmi:id="_LeG-QNXrEei5BerjL2AyGg" name="helloWorld" visibility="public">
+            <ownedParameter xmi:id="_LeG-QdXrEei5BerjL2AyGg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LeHlUNXrEei5BerjL2AyGg" name="hello" visibility="public">
+            <ownedParameter xmi:id="_LeHlUdXrEei5BerjL2AyGg" name="who">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LeHlUtXrEei5BerjL2AyGg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LeIzcNXrEei5BerjL2AyGg" name="twHello" visibility="public">
+            <ownedParameter xmi:id="_LeIzcdXrEei5BerjL2AyGg" name="who">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LeIzctXrEei5BerjL2AyGg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LeIzc9XrEei5BerjL2AyGg" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Lcgbw9XrEei5BerjL2AyGg" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LcgbxNXrEei5BerjL2AyGg" name="Customers"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LcgbwNXrEei5BerjL2AyGg" name="google">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LcgbwdXrEei5BerjL2AyGg" name="gson">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LcgbwtXrEei5BerjL2AyGg" name="Gson"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LcdYcNXrEei5BerjL2AyGg" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LcdYcdXrEei5BerjL2AyGg" name="ws">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LcdYctXrEei5BerjL2AyGg" name="rs">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Lcf0sNXrEei5BerjL2AyGg" name="GET"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Lcf0sdXrEei5BerjL2AyGg" name="Path"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Lcf0stXrEei5BerjL2AyGg" name="Produces"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LcgbxdXrEei5BerjL2AyGg" name="POST"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LcgbxtXrEei5BerjL2AyGg" name="PathParam"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LchC0NXrEei5BerjL2AyGg" name="QueryParam"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

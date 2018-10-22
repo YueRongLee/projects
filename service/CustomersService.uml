@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_T-oN0NXrEei5BerjL2AyGg" name="service">
+  <packagedElement xmi:type="uml:Package" xmi:id="_T-oN0dXrEei5BerjL2AyGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_T-oN0tXrEei5BerjL2AyGg" name="khh">
+      <packagedElement xmi:type="uml:Package" xmi:id="_T-oN09XrEei5BerjL2AyGg" name="service">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_T-oN1NXrEei5BerjL2AyGg">
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_T-oN1dXrEei5BerjL2AyGg">
+            <ownedAttribute xmi:id="_T-oN1tXrEei5BerjL2AyGg" name="property" type="_T-oOBNXrEei5BerjL2AyGg"/>
+            <ownedAttribute xmi:id="_T-oN19XrEei5BerjL2AyGg" name="property" type="_T-oODdXrEei5BerjL2AyGg"/>
+            <ownedAttribute xmi:id="_T-oN2NXrEei5BerjL2AyGg" name="property" type="_T-oOENXrEei5BerjL2AyGg"/>
+            <ownedConnector xmi:id="_T-oN2dXrEei5BerjL2AyGg">
+              <end xmi:id="_T-oN2tXrEei5BerjL2AyGg" role="_T-oN1tXrEei5BerjL2AyGg" partWithPort="_T-oN1tXrEei5BerjL2AyGg"/>
+            </ownedConnector>
+            <ownedConnector xmi:id="_T-oN29XrEei5BerjL2AyGg">
+              <end xmi:id="_T-oN3NXrEei5BerjL2AyGg" role="_T-oN19XrEei5BerjL2AyGg" partWithPort="_T-oN19XrEei5BerjL2AyGg"/>
+            </ownedConnector>
+            <ownedConnector xmi:id="_T-oN3dXrEei5BerjL2AyGg">
+              <end xmi:id="_T-oN3tXrEei5BerjL2AyGg" role="_T-oN2NXrEei5BerjL2AyGg" partWithPort="_T-oN2NXrEei5BerjL2AyGg"/>
+            </ownedConnector>
+            <lifeline xmi:id="_T-oN39XrEei5BerjL2AyGg" name="self" represents="_T-oN1tXrEei5BerjL2AyGg" coveredBy="_T-oN4tXrEei5BerjL2AyGg _T-oN49XrEei5BerjL2AyGg _T-oN5NXrEei5BerjL2AyGg _T-oN5tXrEei5BerjL2AyGg _T-oN59XrEei5BerjL2AyGg _T-oN6tXrEei5BerjL2AyGg _T-oN69XrEei5BerjL2AyGg _T-oN7tXrEei5BerjL2AyGg _T-oN79XrEei5BerjL2AyGg _T-oN8tXrEei5BerjL2AyGg _T-oN89XrEei5BerjL2AyGg _T-oN9tXrEei5BerjL2AyGg _T-oN99XrEei5BerjL2AyGg _T-oN-dXrEei5BerjL2AyGg _T-oN-tXrEei5BerjL2AyGg"/>
+            <lifeline xmi:id="_T-oN4NXrEei5BerjL2AyGg" name="customers" represents="_T-oN19XrEei5BerjL2AyGg" coveredBy="_T-oN5dXrEei5BerjL2AyGg _T-oN6NXrEei5BerjL2AyGg _T-oN6dXrEei5BerjL2AyGg _T-oN7NXrEei5BerjL2AyGg _T-oN7dXrEei5BerjL2AyGg _T-oN8NXrEei5BerjL2AyGg _T-oN8dXrEei5BerjL2AyGg _T-oN9NXrEei5BerjL2AyGg _T-oN9dXrEei5BerjL2AyGg"/>
+            <lifeline xmi:id="_T-oN4dXrEei5BerjL2AyGg" name="gson" represents="_T-oN2NXrEei5BerjL2AyGg" coveredBy="_T-oN-NXrEei5BerjL2AyGg _T-oN-9XrEei5BerjL2AyGg _T-oN_NXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN4tXrEei5BerjL2AyGg" name="getCustomers( )" covered="_T-oN39XrEei5BerjL2AyGg" start="_T-oN49XrEei5BerjL2AyGg" finish="_T-oN-tXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN49XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOBdXrEei5BerjL2AyGg" message="_T-oN_dXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN5NXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOBdXrEei5BerjL2AyGg" message="_T-oN_dXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN5dXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" event="_T-oOBdXrEei5BerjL2AyGg" message="_T-oN_dXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN5tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOBtXrEei5BerjL2AyGg" message="_T-oN_tXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN59XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOBtXrEei5BerjL2AyGg" message="_T-oN_tXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN6NXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" event="_T-oOBtXrEei5BerjL2AyGg" message="_T-oN_tXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN6dXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" start="_T-oN6NXrEei5BerjL2AyGg" finish="_T-oN6NXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN6tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOB9XrEei5BerjL2AyGg" message="_T-oN_9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN69XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOB9XrEei5BerjL2AyGg" message="_T-oN_9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN7NXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" event="_T-oOB9XrEei5BerjL2AyGg" message="_T-oN_9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN7dXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" start="_T-oN7NXrEei5BerjL2AyGg" finish="_T-oN7NXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN7tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCNXrEei5BerjL2AyGg" message="_T-oOANXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN79XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCNXrEei5BerjL2AyGg" message="_T-oOANXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN8NXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" event="_T-oOCNXrEei5BerjL2AyGg" message="_T-oOANXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN8dXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" start="_T-oN8NXrEei5BerjL2AyGg" finish="_T-oN8NXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN8tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCdXrEei5BerjL2AyGg" message="_T-oOAdXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN89XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCdXrEei5BerjL2AyGg" message="_T-oOAdXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN9NXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" event="_T-oOCdXrEei5BerjL2AyGg" message="_T-oOAdXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN9dXrEei5BerjL2AyGg" covered="_T-oN4NXrEei5BerjL2AyGg" start="_T-oN9NXrEei5BerjL2AyGg" finish="_T-oN9NXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN9tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCtXrEei5BerjL2AyGg" message="_T-oOAtXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN99XrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOCtXrEei5BerjL2AyGg" message="_T-oOAtXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN-NXrEei5BerjL2AyGg" covered="_T-oN4dXrEei5BerjL2AyGg" event="_T-oOCtXrEei5BerjL2AyGg" message="_T-oOAtXrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN-dXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOC9XrEei5BerjL2AyGg" message="_T-oOA9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN-tXrEei5BerjL2AyGg" covered="_T-oN39XrEei5BerjL2AyGg" event="_T-oOC9XrEei5BerjL2AyGg" message="_T-oOA9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T-oN-9XrEei5BerjL2AyGg" covered="_T-oN4dXrEei5BerjL2AyGg" event="_T-oOC9XrEei5BerjL2AyGg" message="_T-oOA9XrEei5BerjL2AyGg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_T-oN_NXrEei5BerjL2AyGg" covered="_T-oN4dXrEei5BerjL2AyGg" start="_T-oN-9XrEei5BerjL2AyGg" finish="_T-oN-9XrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oN_dXrEei5BerjL2AyGg" name="new()" messageSort="createMessage" receiveEvent="_T-oN5dXrEei5BerjL2AyGg" sendEvent="_T-oN49XrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oN_tXrEei5BerjL2AyGg" name="setCustomerID( )" messageSort="asynchCall" receiveEvent="_T-oN6NXrEei5BerjL2AyGg" sendEvent="_T-oN5tXrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oN_9XrEei5BerjL2AyGg" name="setCompanyName( )" messageSort="asynchCall" receiveEvent="_T-oN7NXrEei5BerjL2AyGg" sendEvent="_T-oN6tXrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oOANXrEei5BerjL2AyGg" name="setAddress( )" messageSort="asynchCall" receiveEvent="_T-oN8NXrEei5BerjL2AyGg" sendEvent="_T-oN7tXrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oOAdXrEei5BerjL2AyGg" name="setCountry( )" messageSort="asynchCall" receiveEvent="_T-oN9NXrEei5BerjL2AyGg" sendEvent="_T-oN8tXrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oOAtXrEei5BerjL2AyGg" name="new()" messageSort="createMessage" receiveEvent="_T-oN-NXrEei5BerjL2AyGg" sendEvent="_T-oN9tXrEei5BerjL2AyGg"/>
+            <message xmi:id="_T-oOA9XrEei5BerjL2AyGg" name="toJson( )" receiveEvent="_T-oN-9XrEei5BerjL2AyGg" sendEvent="_T-oN-dXrEei5BerjL2AyGg"/>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_T-oOBNXrEei5BerjL2AyGg" name="CustomersService"/>
+        <packagedElement xmi:type="uml:CreationEvent" xmi:id="_T-oOBdXrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_T-oOBtXrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_T-oOB9XrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_T-oOCNXrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_T-oOCdXrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CreationEvent" xmi:id="_T-oOCtXrEei5BerjL2AyGg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_T-oOC9XrEei5BerjL2AyGg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_T-oODNXrEei5BerjL2AyGg" name="domain">
+        <packagedElement xmi:type="uml:Class" xmi:id="_T-oODdXrEei5BerjL2AyGg" name="Customers"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T-oODtXrEei5BerjL2AyGg" name="google">
+      <packagedElement xmi:type="uml:Package" xmi:id="_T-oOD9XrEei5BerjL2AyGg" name="gson">
+        <packagedElement xmi:type="uml:Class" xmi:id="_T-oOENXrEei5BerjL2AyGg" name="Gson"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

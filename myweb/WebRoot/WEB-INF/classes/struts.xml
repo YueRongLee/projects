@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="hello" extends="struts-default">
+	<action name="gjunhello" class="com.khh.action.HelloController" method="helloWorld">
+		<result name="hello">/index.jsp</result></action></package>
+	<!-- 配置package 區塊裡面所有action都更login/register有關 規劃一層虛擬目錄-->
+	<package name="login" extends="struts-default" >
+		<!-- 佈署action -->
+		<action name="gjunlogin"
+			class="com.khh.controller.LoginController" method="renderLogin">
+			<!-- 接旗標 預設派送採用dispatcher-->
+			<result name="success">/WEB-INF/login/login.jsp</result>
+			<result name="ok">/index.jsp</result>
+		</action>
+		<action name="uservalid"
+			class="com.khh.controller.LoginController" method="loginValid">
+
+		<result name="success" type="dispatcher">
+			/WEB-INF/login/validok.jsp
+		</result>
+		<result name="failure">/WEB-INF/login/nook.jsp</result></action>
+	</package>
+</struts>    
